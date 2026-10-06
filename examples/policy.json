@@ -1,0 +1,40 @@
+{
+  "description": "Illustrative policy. All names, addresses and limits are fictional.",
+  "tiers": {
+    "hot": {
+      "max_per_tx_usd": 50000,
+      "max_24h_usd": 200000,
+      "approvals": {"total": 1, "roles": {}},
+      "time_lock_hours": 0,
+      "max_share_of_aum": 0.02
+    },
+    "warm": {
+      "max_per_tx_usd": 500000,
+      "max_24h_usd": 1000000,
+      "approvals": {"total": 2, "roles": {"risk": 1}},
+      "time_lock_hours": 0,
+      "max_share_of_aum": 0.10
+    },
+    "cold": {
+      "max_per_tx_usd": null,
+      "max_24h_usd": null,
+      "approvals": {"total": 3, "roles": {"risk": 1, "executive": 1}},
+      "time_lock_hours": 24,
+      "max_share_of_aum": 1.0
+    }
+  },
+  "allowlist_cooling_hours": 48,
+  "approvers": {
+    "alice": "operations",
+    "dan": "operations",
+    "bob": "risk",
+    "erin": "risk",
+    "carol": "executive"
+  },
+  "allowlist": [
+    {"address": "addr-exchange-a", "label": "Settlement account, exchange A", "added_at": "2026-09-01T00:00:00Z"},
+    {"address": "addr-client-001", "label": "Client 001 withdrawal address", "added_at": "2026-09-15T00:00:00Z"},
+    {"address": "addr-otc-desk-b", "label": "OTC counterparty B", "added_at": "2026-10-05T20:00:00Z"}
+  ],
+  "blocklist": ["addr-sanctioned-example"]
+}

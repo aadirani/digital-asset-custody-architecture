@@ -1,0 +1,32 @@
+{
+  "description": "Fictional withdrawal requests, evaluated at 2026-10-06T12:00:00Z.",
+  "history": [
+    {"tier": "hot", "amount_usd": 120000, "executed_at": "2026-10-06T02:00:00Z"},
+    {"tier": "hot", "amount_usd": 45000, "executed_at": "2026-10-06T08:00:00Z"},
+    {"tier": "hot", "amount_usd": 90000, "executed_at": "2026-10-04T08:00:00Z"}
+  ],
+  "requests": [
+    {"id": "W-01", "tier": "hot", "asset": "BTC", "amount_usd": 20000, "destination": "addr-client-001",
+     "requested_by": "dan", "approvals": ["alice"], "requested_at": "2026-10-06T11:00:00Z"},
+    {"id": "W-02", "tier": "hot", "asset": "ETH", "amount_usd": 80000, "destination": "addr-exchange-a",
+     "requested_by": "dan", "approvals": ["alice"], "requested_at": "2026-10-06T11:00:00Z"},
+    {"id": "W-03", "tier": "hot", "asset": "USDT", "amount_usd": 40000, "destination": "addr-exchange-a",
+     "requested_by": "dan", "approvals": ["alice"], "requested_at": "2026-10-06T11:00:00Z"},
+    {"id": "W-04", "tier": "warm", "asset": "BTC", "amount_usd": 300000, "destination": "addr-exchange-a",
+     "requested_by": "dan", "approvals": ["alice"], "requested_at": "2026-10-06T11:00:00Z"},
+    {"id": "W-05", "tier": "warm", "asset": "BTC", "amount_usd": 300000, "destination": "addr-exchange-a",
+     "requested_by": "dan", "approvals": ["alice", "bob"], "requested_at": "2026-10-06T11:00:00Z"},
+    {"id": "W-06", "tier": "hot", "asset": "ETH", "amount_usd": 10000, "destination": "addr-unknown-xyz",
+     "requested_by": "dan", "approvals": ["alice"], "requested_at": "2026-10-06T11:00:00Z"},
+    {"id": "W-07", "tier": "warm", "asset": "BTC", "amount_usd": 100000, "destination": "addr-otc-desk-b",
+     "requested_by": "dan", "approvals": ["alice", "bob"], "requested_at": "2026-10-06T11:00:00Z"},
+    {"id": "W-08", "tier": "hot", "asset": "BTC", "amount_usd": 5000, "destination": "addr-client-001",
+     "requested_by": "alice", "approvals": ["alice"], "requested_at": "2026-10-06T11:00:00Z"},
+    {"id": "W-09", "tier": "cold", "asset": "BTC", "amount_usd": 5000000, "destination": "addr-exchange-a",
+     "requested_by": "dan", "approvals": ["alice", "bob", "carol"], "requested_at": "2026-10-06T09:00:00Z"},
+    {"id": "W-10", "tier": "cold", "asset": "BTC", "amount_usd": 5000000, "destination": "addr-exchange-a",
+     "requested_by": "dan", "approvals": ["alice", "bob", "carol"], "requested_at": "2026-10-05T09:00:00Z"},
+    {"id": "W-11", "tier": "hot", "asset": "ETH", "amount_usd": 1000, "destination": "addr-sanctioned-example",
+     "requested_by": "dan", "approvals": ["alice"], "requested_at": "2026-10-06T11:00:00Z"}
+  ]
+}
